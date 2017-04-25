@@ -36,5 +36,6 @@ def backtracking(f, x, alpha, direction, parameters_in=[]):
             return True, alpha, x
         else:
             alpha *= rho
+        nb_backtrack += 1
 
     return False, alpha, x
